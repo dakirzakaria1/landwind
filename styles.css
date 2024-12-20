@@ -1,0 +1,147 @@
+:root {
+  --container-max-width: 1280px;
+  --container-padding-inline: 16px;
+}
+body {
+  max-width: 100dvw;
+  min-height: 100dvh;
+  font-family: "Inter", serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: var(--container-max-width);
+  padding-inline: var(--container-padding-inline);
+  margin-inline: auto;
+}
+.header {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo-nav {
+  display: flex;
+  gap: 32px;
+}
+.header .logo-nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgb(17, 25, 40);
+  font-size: 24px;
+  font-weight: 600;
+}
+.header .logo-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.header .buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header .buttons a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .buttons a:nth-child(1) {
+  color: rgb(17, 25, 40);
+}
+.header .buttons a:nth-child(2) {
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: rgb(126, 58, 242);
+  padding: 8px 12px;
+}
+.hero {
+  padding-top: 149px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero article {
+  max-width: 706px;
+}
+.hero article h1 {
+  color: rgb(17, 25, 40);
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+}
+.hero article p {
+  color: rgb(107, 114, 128);
+  font-size: 20px;
+  margin-block: 24px 40px;
+}
+.hero img {
+  width: 532px;
+  height: 416px;
+}
+.hero .buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero .buttons a {
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 12px 12px;
+}
+.hero .buttons a:nth-child(1) {
+  color: rgb(255, 255, 255);
+  background-color: rgb(126, 58, 242);
+}
+.hero .buttons a:nth-child(2) {
+  border: 1px solid rgb(229, 231, 235);
+  color: rgb(31, 42, 55);
+}
+.partners {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.partners .logo {
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+.partners .logo:nth-child(1) img {
+  width: 128px;
+  height: 41.76px;
+}
+.partners .logo:nth-child(2) img {
+  width: 150.01px;
+  height: 32.02px;
+}
+.partners .logo:nth-child(3) img {
+  width: 128px;
+  height: 41.76px;
+}
+.partners .logo:nth-child(4) img {
+  width: 135.1px;
+  height: 36.33px;
+}
+.partners .logo:nth-child(5) img {
+  width: 102.2px;
+  height: 31.9px;
+}
+.partners .logo:nth-child(6) img {
+  width: 131.91px;
+  height: 27.54px;
+}
+.partners .logo:hover {
+  scale: 1.1;
+  opacity: 1;
+}
